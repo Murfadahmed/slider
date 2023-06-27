@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.sliderContainer {
+     /* background-color: olive; */
+     border: 12PX solid;
+     overflow: hidden;
+}
+
+
+
+.slide{
+    flex: 0 0 100% !important; 
+    height: 600px;
+     background-size: cover; 
+    background-position: center; 
+ }
+ .sliderBtn{
+    transform: translateX(-50%);
+ }
+  
+  .next{
+    /* margin: 0 20px; */
+    background-color: transparent;
+    color: white;
+    font-size: 5rem;
+    border: none;
+    
+  }
+  .prev{
+    background-color: transparent;
+    color: white;
+    font-size: 5rem;
+    border: none;
+    
+  }
+
+
+  .active{
+    transform: translateX(0);
+  }
+
+  .slider{
+    transition: transform 1.5s ease-in-out;
+  }
